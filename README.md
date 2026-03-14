@@ -1,5 +1,16 @@
-<div align="center">
 
+
+<div align="center">
+MacPro 2013
+1. brew install python@3.12
+2. brew install git 
+3. cd ComfyUI
+4. git clone https://github.com/Comfy-Org/ComfyUI.git  . 
+5. mkdir -p custom_nodes
+6. python3.12 -m venv venv
+7. source venv/bin/activate
+8. pip install -r ./req.txt
+   
 # ComfyUI
 **The most powerful and modular diffusion model GUI and backend.**
 
