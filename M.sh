@@ -7,6 +7,18 @@ function timeout() {
     perl -e 'alarm shift; exec "@ARGV"' "$@"
 }
 
+function install_macpro2013 {
+#brew install python@3.12
+#brew install git 
+#cd ComfyUI
+git clone https://github.com/RyuJongJin/ComfyUI_MacPro2013.git .
+mkdir -p custom_nodes
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r ./req.txt
+python main.py --cpu
+}
+
 function start_app {
     # 이미 실행 중인지 확인 (중복 실행 방지)
     if [ -f save_pid.txt ]; then
@@ -67,6 +79,7 @@ do
     status_app
     echo ""
     echo "========== 관리 메뉴 =========="
+    echo "00) install ComfyUI to MacPro2013"
     echo "01) start  02) stop"
     echo "03) status 04) log"
     echo "q)  exit"
@@ -75,6 +88,7 @@ do
     read -p "선택: " AA 
 
     case $AA in
+        "00") install_macpro2013 ;;
         "01") start_app ;;
         "02") stop_app ;;
         "03") status_app ;;
