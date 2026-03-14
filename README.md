@@ -1,6 +1,7 @@
 
 
 <div align="center">
+   <pre>
 MacPro 2013
 1. brew install python@3.12
 2. brew install git 
@@ -10,6 +11,7 @@ MacPro 2013
 6. python3.12 -m venv venv
 7. source venv/bin/activate
 8. pip install -r ./req.txt
+   </pre>
    
 # ComfyUI
 **The most powerful and modular diffusion model GUI and backend.**
