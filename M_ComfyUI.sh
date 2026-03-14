@@ -79,12 +79,12 @@ do
     echo "===================================="
     status_app
     echo ""
-    echo "========== 관리 메뉴 =========="
-    echo "00) Install ComfyUI to MacPro2013
+    echo "=============== 관리 메뉴 =========="
+    echo "00) Install ComfyUI to MacPro2013"
     echo "01) start  02) stop"
     echo "03) status 04) log"
     echo "q)  exit"
-    echo "==============================="
+    echo "===================================="
     
     read -p "선택: " AA 
 
