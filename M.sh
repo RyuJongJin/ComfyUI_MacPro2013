@@ -11,7 +11,7 @@ function install_macpro2013 {
 #brew install python@3.12
 #brew install git 
 #cd ComfyUI
-git clone https://github.com/RyuJongJin/ComfyUI_MacPro2013.git .
+#git clone https://github.com/RyuJongJin/ComfyUI_MacPro2013.git .
 mkdir -p custom_nodes
 python3.12 -m venv venv
 source venv/bin/activate
